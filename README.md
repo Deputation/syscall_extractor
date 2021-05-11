@@ -8,7 +8,7 @@ It extracts Windows syscall IDs by disassembling stubs located in ``ntdll.dll``,
 Documentation is already present in the header files to thoroughly explain what each function and class member is supposed to do, if not already clear at first.
 
 # Notes
-Make sure you have zydis installed, either via vcpkg or included manually in the project's folder (you will likely need to edit the project settings if you plan on doing this). The triplet I used when developing the extractor was ``zydis:x64-windows-static``.
+Make sure you have zydis installed, either via [vcpkg](https://github.com/microsoft/vcpkg) or included manually in the project's folder (you will likely need to edit the project settings if you plan on doing this). The triplet I used when developing the extractor was ``zydis:x64-windows-static``.
 
 # Credits
 To format the syscalls nicely and get an output that can be easily converted to a C-style array from j00ru's repository, [AgentBlackout](https://github.com/AgentBlackout) gave me a nice python script that I'll leave here, feel free to customize it as you desire since it's very simple to understand. A copy of the file can be found in the repository as well with the name syscall-names-grabber.py.
