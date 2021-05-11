@@ -1,5 +1,5 @@
 # syscall_extractor
-A C++ syscall ID extractor for Windows. Developed, debugged and tested in 20H2. It contains 471 syscall names extracted from https://github.com/j00ru/windows-syscalls for Windows 20H2.
+An x64 only C++ syscall ID extractor for Windows. Developed, debugged and tested in 20H2. It contains 471 syscall names extracted from https://github.com/j00ru/windows-syscalls for Windows 20H2.
 
 # How?
 It extracts Windows syscall IDs by disassembling stubs located in ``ntdll.dll``, it then looks for any ``mov eax`` instructions and tries to grab the syscall hex code contained in the stubs. Notes and explanations about special cases can be found in the source files as well as an explanation regarding how errors are "reported".
