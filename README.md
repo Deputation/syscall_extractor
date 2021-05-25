@@ -1,4 +1,4 @@
-# syscall_extractor ⛏
+# syscall_extractor
 An x64 only C++ syscall ID extractor for Windows. Developed, debugged and tested in 20H2. It contains 471 syscall names extracted from https://github.com/j00ru/windows-syscalls for Windows 20H2. PRs are open!
 
 # How?
